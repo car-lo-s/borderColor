@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Border-color</title>
+</head>
+<body>
+    <section class = 'container'>
+        <div class = 'resultado'>
+            <!-- <p id='respostaR'></p>
+            <p id='respostaG'></p>
+            <p id='respostaB'></p> -->
+        </div>
+        <div class="codigo">
+            
+        </div>
+        <section class="opcao">
+            <div class = 'borda'>
+                <select id="borda">
+                    <option value="none">Sem borda</option>
+                    <option value="dotted">Pontilhada</option>
+                    <option value="solid">Continua</option>
+                    <option value="double">Borda dupla</option>
+                    <option value="groove">Entalhada</option>
+                    <option value="ridge">Ressalto</option>
+                    <option value="inset">Baixo relevo</option>
+                    <option value="outset">Alto relevo</option>
+                </select>
+                <input type="number" name="espessura" id="espessura" placeholder="espessura">
+                <button id="botao">Enviar</button>
+                
+            </div>
+            <div class = 'cores'>
+                <input type="range" name="red" id="red" max="255"  min="0">
+                <input type="range" name="green" id="green" max="255"  min="0">
+                <input type="range" name="blue" id="blue" max="255"  min="0">
+            </div>
+        </section>
+    </section>
+    <script src="./cores.js"></script>
+    <script src="./borda.js"></script>
+</body>
+</html>
